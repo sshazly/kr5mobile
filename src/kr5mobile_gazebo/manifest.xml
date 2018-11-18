@@ -1,0 +1,7 @@
+<package>
+  <description brief="kr5mobile_gazebo">kr5mobile_gazebo</description>
+  <depend package="gazebo" 
+	  package="kr5mobile_description"/>
+  <author>Sherif Shazly</author>
+  <license>BSD</license>
+</package>

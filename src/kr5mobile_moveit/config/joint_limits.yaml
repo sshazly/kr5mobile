@@ -1,0 +1,89 @@
+# joint_limits.yaml allows the dynamics properties specified in the URDF to be overwritten or augmented as needed
+# Specific joint properties can be changed with the keys [max_position, min_position, max_velocity, max_acceleration]
+# Joint limits can be turned off with [has_velocity_limits, has_acceleration_limits]
+joint_limits:
+  base_to_wheel1_x:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  base_to_wheel1_y:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  base_to_wheel2_x:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  base_to_wheel2_y:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  base_to_wheel3_x:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  base_to_wheel3_y:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  base_to_wheel4_x:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  base_to_wheel4_y:
+    has_velocity_limits: false
+    max_velocity: 0
+    has_acceleration_limits: false
+    max_acceleration: 0
+  elbow_pitch:
+    has_velocity_limits: true
+    max_velocity: 6.545
+    has_acceleration_limits: false
+    max_acceleration: 0
+  elbow_roll:
+    has_velocity_limits: true
+    max_velocity: 7.1558
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_1_roll:
+    has_velocity_limits: true
+    max_velocity: 11.5191731
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_2_roll:
+    has_velocity_limits: true
+    max_velocity: 11.5191731
+    has_acceleration_limits: false
+    max_acceleration: 0
+  finger_3_roll:
+    has_velocity_limits: true
+    max_velocity: 11.5191731
+    has_acceleration_limits: false
+    max_acceleration: 0
+  shoulder_pitch:
+    has_velocity_limits: true
+    max_velocity: 5.236
+    has_acceleration_limits: false
+    max_acceleration: 0
+  shoulder_yaw:
+    has_velocity_limits: true
+    max_velocity: 6.545
+    has_acceleration_limits: false
+    max_acceleration: 0
+  wrist_pitch:
+    has_velocity_limits: true
+    max_velocity: 7.1558
+    has_acceleration_limits: false
+    max_acceleration: 0
+  wrist_roll:
+    has_velocity_limits: true
+    max_velocity: 11.5191731
+    has_acceleration_limits: false
+    max_acceleration: 0

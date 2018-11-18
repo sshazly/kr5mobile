@@ -1,0 +1,24 @@
+controller_list:
+  - name: fake_mobile_controller
+    joints:
+      - base_to_wheel1_x
+      - base_to_wheel1_y
+      - base_to_wheel2_x
+      - base_to_wheel2_y
+      - base_to_wheel3_x
+      - base_to_wheel3_y
+      - base_to_wheel4_x
+      - base_to_wheel4_y
+  - name: fake_arm_controller
+    joints:
+      - shoulder_yaw
+      - shoulder_pitch
+      - elbow_pitch
+      - elbow_roll
+      - wrist_pitch
+  - name: fake_hand_controller
+    joints:
+      - wrist_roll
+      - finger_1_roll
+      - finger_2_roll
+      - finger_3_roll

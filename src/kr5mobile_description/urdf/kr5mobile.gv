@@ -1,0 +1,65 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"robot_base" [label="robot_base"];
+"wheel1_x" [label="wheel1_x"];
+"wheel1_y" [label="wheel1_y"];
+"wheel2_x" [label="wheel2_x"];
+"wheel2_y" [label="wheel2_y"];
+"wheel3_x" [label="wheel3_x"];
+"wheel3_y" [label="wheel3_y"];
+"wheel4_x" [label="wheel4_x"];
+"wheel4_y" [label="wheel4_y"];
+"hokuyo" [label="hokuyo"];
+"shoulder" [label="shoulder"];
+"bicep" [label="bicep"];
+"elbow" [label="elbow"];
+"forearm" [label="forearm"];
+"wrist" [label="wrist"];
+"palm" [label="palm"];
+"camera" [label="camera"];
+"finger_1" [label="finger_1"];
+"finger_2" [label="finger_2"];
+"finger_3" [label="finger_3"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "base_to_robot_base" [label="xyz: 0.12 0 0.375 \nrpy: 0 -0 0"]
+"base_to_robot_base" -> "robot_base"
+"base_link" -> "base_to_wheel1_x" [label="xyz: 0.4572 0.3175 0 \nrpy: 0 -0 0"]
+"base_to_wheel1_x" -> "wheel1_x"
+"base_link" -> "base_to_wheel1_y" [label="xyz: 0.4572 0.3175 0 \nrpy: 0 -0 0"]
+"base_to_wheel1_y" -> "wheel1_y"
+"base_link" -> "base_to_wheel2_x" [label="xyz: -0.4572 -0.3175 0 \nrpy: 0 -0 0"]
+"base_to_wheel2_x" -> "wheel2_x"
+"base_link" -> "base_to_wheel2_y" [label="xyz: -0.4572 -0.3175 0 \nrpy: 0 -0 0"]
+"base_to_wheel2_y" -> "wheel2_y"
+"base_link" -> "base_to_wheel3_x" [label="xyz: -0.4572 0.3175 0 \nrpy: 0 -0 0"]
+"base_to_wheel3_x" -> "wheel3_x"
+"base_link" -> "base_to_wheel3_y" [label="xyz: -0.4572 0.3175 0 \nrpy: 0 -0 0"]
+"base_to_wheel3_y" -> "wheel3_y"
+"base_link" -> "base_to_wheel4_x" [label="xyz: 0.4572 -0.3175 0 \nrpy: 0 -0 0"]
+"base_to_wheel4_x" -> "wheel4_x"
+"base_link" -> "base_to_wheel4_y" [label="xyz: 0.4572 -0.3175 0 \nrpy: 0 -0 0"]
+"base_to_wheel4_y" -> "wheel4_y"
+"base_link" -> "hokuyo_joint" [label="xyz: 0.5072 0 0.3175 \nrpy: 0 -0 0"]
+"hokuyo_joint" -> "hokuyo"
+"base_link" -> "shoulder_yaw" [label="xyz: 0.12 0 0.578 \nrpy: 0 -0 0"]
+"shoulder_yaw" -> "shoulder"
+"shoulder" -> "shoulder_pitch" [label="xyz: 0.075 0.0735 0.13 \nrpy: 0 -0 0"]
+"shoulder_pitch" -> "bicep"
+"bicep" -> "elbow_pitch" [label="xyz: 0 -0.0055 0.27 \nrpy: 0 -0 0"]
+"elbow_pitch" -> "elbow"
+"elbow" -> "elbow_roll" [label="xyz: 0.106 -0.0680006 0.09 \nrpy: 0 -0 0"]
+"elbow_roll" -> "forearm"
+"forearm" -> "wrist_pitch" [label="xyz: 0.187 -0.029 0 \nrpy: 0 -0 0"]
+"wrist_pitch" -> "wrist"
+"wrist" -> "wrist_roll" [label="xyz: 0.052 0.029 0 \nrpy: 0 -0 0"]
+"wrist_roll" -> "palm"
+"palm" -> "camera_joint" [label="xyz: 0.025 0 0 \nrpy: 0 -0 0"]
+"camera_joint" -> "camera"
+"palm" -> "finger_1_roll" [label="xyz: 0 0.025 -0.075 \nrpy: 0 -0 0"]
+"finger_1_roll" -> "finger_1"
+"palm" -> "finger_2_roll" [label="xyz: 0 -0.025 -0.075 \nrpy: 0 -0 0"]
+"finger_2_roll" -> "finger_2"
+"palm" -> "finger_3_roll" [label="xyz: 0 0 0.075 \nrpy: 0 -0 0"]
+"finger_3_roll" -> "finger_3"
+}

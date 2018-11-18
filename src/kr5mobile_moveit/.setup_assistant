@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: kr5mobile_description
+    relative_path: urdf/kr5mobile.urdf
+  SRDF:
+    relative_path: config/kr5mobile.srdf
+  CONFIG:
+    author_name: Sherif Shazly
+    author_email: sshazly@ncsu.edu
+    generated_timestamp: 1512521807
